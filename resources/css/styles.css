@@ -72,6 +72,11 @@ h1 {
   margin: 0;
 }
 
+#home img {
+  opacity: 42%;
+  margin: 4em 0;
+}
+
 #about,
 #specifications,
 #examples,
@@ -88,6 +93,68 @@ form,
   padding-left: 20em;
   padding-right: 20em;
 }
+
+h3 a {
+  display: flex;
+  align-items: center;
+}
+
+h3 a img {
+  margin: 0 1em 0 0;
+}
+
+#about,
+#specifications {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2em;
+  margin-left: 20em;
+  margin-right: 20em;
+  border-bottom: solid;
+  border-width: 2px;
+}
+
+#examples p {
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-right: 6em;
+  margin-left: 6em;
+  margin-bottom: 2em;
+}
+
+#solution-pics,
+#example-pics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figure.solution-figure {
+  padding: 2em;
+}
+
+#main-about img:not(.self):hover {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+#main-about img:not(.self) {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.solution-figure img,
+.example-figure img {
+  width: 300px;
+  height: auto;
+}
+
 #development {
   flex-direction: column;
   justify-content: center;
