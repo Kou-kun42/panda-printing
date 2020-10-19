@@ -1,0 +1,203 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+  color: #212529;
+  background-color: #fff;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  justify-content: space-between;
+  background-color: #5287b3;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 2em;
+}
+
+li {
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 1);
+  transition-duration: 0.1s;
+}
+
+.navbar h3 a {
+  color: rgba(255, 255, 255, 1);
+  margin-left: 2em;
+  font-size: 1.5rem;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 30em;
+  padding-right: 30em;
+}
+
+h1 {
+  display: block;
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 500;
+  margin: 2em, 0;
+}
+
+#home p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#about,
+#specifications,
+#examples,
+#submit,
+#calculator,
+#submission,
+form,
+#development {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  margin: 0;
+  padding-left: 20em;
+  padding-right: 20em;
+}
+#development {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#development p {
+  font-size: 1.5rem;
+}
+
+#calculator,
+#submission {
+  padding-left: 10em;
+  padding-right: 10em;
+  text-align: center;
+}
+
+#submit-button {
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #91c2eb;
+  border-radius: 10px;
+}
+
+label {
+  font-size: large;
+  margin: 0.5rem;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+input:not(#submit-button),
+select {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: rgb(236, 246, 255);
+  border-width: 1px;
+}
+
+#submit-button {
+  font-size: 1rem;
+}
+
+#filament-length,
+#print-weight,
+#material,
+#zipcode,
+#print-cost,
+#shipping-cost,
+#total-cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#printcost-display,
+#shippingcost-display,
+#totalcost-display {
+  background-color: rgb(236, 246, 255);
+  padding: 0.5rem 3.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#total-cost {
+  font-weight: 600;
+}
+
+#status,
+#status form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#status #order-number {
+  padding: 0.25rem 6rem;
+}

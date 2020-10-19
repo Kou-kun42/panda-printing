@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Panda Printing Print Submission</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <h3><a href="index.html">Panda Printing</a></h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="print.html">Submit a Print</a></li>
+        <li><a href="status.html">Print Status</a></li>
+      </ul>
+    </header>
+    <main id="submit">
+      <!-- I wanted to incorporate curaengine which is the backend of an open 
+        source slicer program used to generate the gcode instructions file that 
+        is sent to the 3D Printer.  The slicer also calculates the weight and 
+        material usage of the model, which is what I was planning on using to 
+        get the final cost estimate for a print.  I tried to figure out how to 
+        implement it, but I couldn't get it working.  This is definitely 
+        something I want to go back and complete once I take some more classes 
+        and have more knowledge on backend web. -->
+      <section id="submission">
+        <header>
+          <h2>Submit a Print</h2>
+        </header>
+        <p>
+          Use our quick and easy print estimation tool to get an instant pricing
+          quote on your 3D model!
+        </p>
+        <p>Submit your stl model to begin</p>
+        <form action="development.html" method="post">
+          <input type="file" id="model" />
+          <input type="submit" id="submit-button" />
+        </form>
+      </section>
+
+      <section id="calculator">
+        <header>
+          <h2>Cost Estimate Calculator</h2>
+        </header>
+        <p>
+          Already know the print weight or filament length required? Input
+          either value into our calculator to get an instant cost estimate
+          without needing to upload your model!
+        </p>
+
+        <div id="inputs">
+          <div id="filament-length">
+            <label for="filamentlength-input"
+              >Length of Filament to be Printed
+              <abbr title="Meters">(m)</abbr></label
+            >
+            <input id="filamentlength-input" type="number" value="0" min="0" />
+          </div>
+
+          <div id="print-weight">
+            <label for="printweight-input"
+              >Weight of Object to be Printed
+              <abbr title="Grams">(g)</abbr></label
+            >
+            <input id="printweight-input" type="number" value="0" min="0" />
+          </div>
+
+          <div id="material">
+            <label for="material-select">Material Type</label>
+            <select name="material-select" id="material-select">
+              <option value="1.24">PLA</option>
+              <option value="1.04">ABS</option>
+              <option value="1.27">PETG</option>
+            </select>
+          </div>
+
+          <div id="zipcode">
+            <label for="zipcode-input">Postal ZIP Code</label>
+            <input id="zipcode-input" type="number" min="0" />
+          </div>
+
+          <div id="print-cost">
+            <label for="printcost-display"
+              >Cost of Print <abbr title="US Dollars">($)</abbr></label
+            >
+            <div id="printcost-display">0.00</div>
+          </div>
+
+          <div id="shipping-cost">
+            <label for="shippingcost-display"
+              >Shipping Cost <abbr title="US Dollars">($)</abbr></label
+            >
+            <div id="shippingcost-display">0.00</div>
+          </div>
+
+          <div id="total-cost">
+            <label for="totalcost-display"
+              >Total Estimated Cost <abbr title="US Dollars">($)</abbr></label
+            >
+            <div id="totalcost-display">0.00</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="resources/js/scripts.js" type="module"></script>
+  </body>
+</html>
